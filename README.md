@@ -13,12 +13,12 @@ yarn create cypress-tests
 yarn add --dev eslint-plugin-cypress @testing-library/cypress
 ```
 
-Install the eslint in package.json
+Install the eslint plugin in package.json instead of jest
 
 ```json
 {
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest", "plugin:cypress/recommended"]
+    "extends": ["react-app", "plugin:cypress/recommended"]
   }
 }
 ```
