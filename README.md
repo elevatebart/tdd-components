@@ -2,9 +2,41 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Install cypress CT in a fresh CRA
+
+```sh
+# Create the react app shell scaffolding
+yarn create react-app
+# Scaffold cypresss tests and follow the instructions in there
+yarn create cypress-tests
+# Install cypress eslint plugin and cypress testing library
+yarn add --dev @cypress/eslint-plugin-dev @testing-library/cypress
+```
+
+Install the eslint in package.json
+
+```json
+{
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest", "plugin:@cypress/dev/tests"]
+  }
+}
+```
+
+Install testing library in cypress
+
+```js
+// cypress/support/commands.js
+import "@testing-library/cypress/add-commands";
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn cypress open-ct`
+
+Opens the testing environment for cypress
 
 ### `yarn start`
 
