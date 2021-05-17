@@ -10,7 +10,7 @@ yarn create react-app
 # Scaffold cypresss tests and follow the instructions in there
 yarn create cypress-tests
 # Install cypress eslint plugin and cypress testing library
-yarn add --dev @cypress/eslint-plugin-dev @testing-library/cypress
+yarn add --dev eslint-plugin-cypress @testing-library/cypress
 ```
 
 Install the eslint in package.json
@@ -18,7 +18,7 @@ Install the eslint in package.json
 ```json
 {
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest", "plugin:@cypress/dev/tests"]
+    "extends": ["react-app", "react-app/jest", "plugin:cypress/recommended"]
   }
 }
 ```
