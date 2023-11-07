@@ -1,0 +1,11 @@
+form {
+  width: 250px;
+  text-align: right;
+  background: #ebebeb;
+  padding: 10px;
+}
+label {
+  display: block;
+  margin: 10px 0;
+  white-space: nowrap;
+}
